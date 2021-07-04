@@ -5,7 +5,7 @@
 
 <mapper namespace="jp.co.teruuu.ec_modeling.infla.data.dao.ProductDtoDao">
 
-    <resultMap id="productDto" type="jp.co.teruuu.ec_modeling.app.app_service.dto.ProductDto">
+    <resultMap id="productDto" type="jp.co.teruuu.ec_modeling.controller.product.dto.ProductDto">
         <result column="product_id" property="productId"/>
         <result column="name" property="name"/>
         <result column="price" property="price"/>

@@ -1,7 +1,7 @@
 package jp.co.teruuu.ec_modeling.controller.order;
 
 import jp.co.teruuu.ec_modeling.app.app_service.OrderService;
-import jp.co.teruuu.ec_modeling.app.app_service.dto.ItemDetail;
+import jp.co.teruuu.ec_modeling.controller.product.dto.ItemDetail;
 import jp.co.teruuu.ec_modeling.app.domain.order.model.PaymentType;
 import jp.co.teruuu.ec_modeling.controller.order.form.OrderConfirmForm;
 import jp.co.teruuu.ec_modeling.controller.order.form.UpdateItemForm;
@@ -26,7 +26,7 @@ public class OrderController {
   @RequestMapping(value = "updateItem", method = RequestMethod.POST, consumes= MediaType.APPLICATION_JSON_VALUE)
   public boolean updateItem(@RequestBody UpdateItemForm form, @AuthenticationPrincipal AuthUser user) {
     LoginUser u = user.getUser();
-    return orderService.updateItem(u, form.getItemId(), form.getNumber());
+    return orderService.updateItem(u, form.getProductId(), form.getNumber());
   }
 
   @RequestMapping(value = "confirm", method = RequestMethod.POST, consumes= MediaType.APPLICATION_JSON_VALUE)

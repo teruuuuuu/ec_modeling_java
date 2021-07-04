@@ -8,6 +8,27 @@ spring:
   h2:
     console:
       enabled: true
+      path: /h2-console
 
   session:
     store-type: jdbc
+
+mybatis:
+  configuration:
+    underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 30
+  type-handlers-package: jp.co.teruuu.ec_modeling.infla.data.typehandler
+
+graphql:
+  servlet:
+    enabled: true
+    mapping: /graphql
+    corsEnabled: true
+
+graphiql:
+  enabled: true
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+

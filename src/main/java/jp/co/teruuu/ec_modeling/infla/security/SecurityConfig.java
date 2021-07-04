@@ -28,7 +28,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     // セキュリティ設定を無視するリクエスト設定
     web.ignoring().antMatchers(
             "/h2-console/**",
-            "/product/search/**");
+            "/product/search/**",
+            "/graphql/**",
+            "/graphiql/**",
+            "/vendor/**"
+    );
   }
 
   @Override

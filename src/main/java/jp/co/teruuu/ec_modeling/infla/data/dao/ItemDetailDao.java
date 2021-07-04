@@ -1,7 +1,6 @@
 package jp.co.teruuu.ec_modeling.infla.data.dao;
 
-import jp.co.teruuu.ec_modeling.app.app_service.dto.ItemDetail;
-import jp.co.teruuu.ec_modeling.app.domain.order.model.Item;
+import jp.co.teruuu.ec_modeling.controller.product.dto.ItemDetail;
 import jp.co.teruuu.ec_modeling.app.domain.order.model.OrderId;
 
 import java.util.HashMap;

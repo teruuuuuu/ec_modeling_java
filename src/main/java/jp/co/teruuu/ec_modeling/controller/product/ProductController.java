@@ -1,7 +1,7 @@
 package jp.co.teruuu.ec_modeling.controller.product;
 
 import jp.co.teruuu.ec_modeling.app.app_service.ProductService;
-import jp.co.teruuu.ec_modeling.app.app_service.dto.ProductDto;
+import jp.co.teruuu.ec_modeling.controller.product.dto.ProductDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
